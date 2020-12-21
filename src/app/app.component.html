@@ -1,11 +1,15 @@
-<app-header></app-header>
+<app-header (optionSelected)= "optionDisplayed($event)"></app-header>
 
 <div class ="row">
   <div class = "col-1"></div>
   <div class = "col-md-10">
 
-    <app-recipes></app-recipes>
-    <app-shopping-list></app-shopping-list>
+    <div *ngIf="option == 'recipes';else: shoppingList">
+      <app-recipes></app-recipes>
+    </div>
+    <ng-template #shoppingList>
+      <app-shopping-list></app-shopping-list>
+    </ng-template>
   </div>
 
 </div>
