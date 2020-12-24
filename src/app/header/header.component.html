@@ -8,10 +8,10 @@
 
 					<ul class="navbar-nav ml-md-auto">
             <li class="nav-item active">
-              <a href="#" class="btn btn-light" (click)="onSelect('recipes')">Recipes</a>
+              <a routerLink="/recipes" routerLinkActive="active" class="btn btn-light active">Recipes</a>
             </li>
 						<li class="nav-item active">
-							 <a class="btn btn-light" href="#" (click)="onSelect('shoppingList')">Shopping list</a>
+							 <a class="btn btn-light" routerLinkActive="active" routerLink="/shopping-list">Shopping list</a>
             </li>
 
 						<li class="nav-item dropdown">
@@ -25,10 +25,10 @@
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                 <ul class="" >
                   <li class="nav-item">
-                    <a href="#" class="btn btn-white">Save Data</a>
+                    <a style="cursor: pointer;" class="btn btn-white">Save Data</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="btn btn-white" >Fetch data</a>
+                    <a style="cursor: pointer;" class="btn btn-white" >Fetch data</a>
                   </li>
                 </ul>
 

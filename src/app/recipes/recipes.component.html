@@ -4,10 +4,6 @@
   </div>
 
   <div class = "col-xs-7">
-
-    <app-recipe-detail *ngIf="selectedRecipe; else selectRecipe" [recipeDisplayed] = selectedRecipe></app-recipe-detail>
-    <ng-template #selectRecipe>
-      <p>Please select recipe!</p>
-    </ng-template>
+    <router-outlet></router-outlet>
   </div>
 </div>

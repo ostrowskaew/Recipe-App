@@ -4,12 +4,6 @@
   <div class = "col-1"></div>
   <div class = "col-md-10">
 
-    <div *ngIf="option == 'recipes';else: shoppingList">
-      <app-recipes></app-recipes>
-    </div>
-    <ng-template #shoppingList>
-      <app-shopping-list></app-shopping-list>
-    </ng-template>
-  </div>
+    <router-outlet></router-outlet>
 
 </div>
