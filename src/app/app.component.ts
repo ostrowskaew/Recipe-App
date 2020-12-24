@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-app';
-  option: string= 'recipes';
 
-  optionDisplayed(option: string){
-    this.option = option;
-    console.log(this.option);
-  }
 }
