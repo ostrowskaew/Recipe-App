@@ -17,6 +17,7 @@ import { RecipeService } from './recipes/recipe.service';
 import { SelectRecipeInfoComponent } from './recipes/select-recipe-info/select-recipe-info.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipeAddComponent } from './recipes/recipe-add/recipe-add.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RecipeAddComponent } from './recipes/recipe-add/recipe-add.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
