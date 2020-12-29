@@ -15,6 +15,7 @@ export class RecipeItemComponent implements OnInit {
      private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
   }
 
   onSelect(){

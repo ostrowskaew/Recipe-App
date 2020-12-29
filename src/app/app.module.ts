@@ -16,8 +16,8 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { RecipeService } from './recipes/recipe.service';
 import { SelectRecipeInfoComponent } from './recipes/select-recipe-info/select-recipe-info.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
-import { RecipeAddComponent } from './recipes/recipe-add/recipe-add.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,14 +31,15 @@ import { FormsModule } from '@angular/forms';
     ShoppingListEditComponent,
     DropdownDriective,
     SelectRecipeInfoComponent,
-    RecipeEditComponent,
-    RecipeAddComponent
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
