@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SelectRecipeInfoComponent } from './recipes/select-recipe-info/select-recipe-info.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RecipesModule } from './recipes.module';
 import { ShoppingListModule } from './shopping-list.module';
 import { AuthModule } from './auth.module';
@@ -23,8 +23,6 @@ import { CoreModule } from './core.module';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    RecipesModule,
-    ShoppingListModule,
     AuthModule,
     CoreModule
   ],
